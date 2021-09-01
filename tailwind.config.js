@@ -8,6 +8,13 @@ module.exports = {
         ...theme('colors'),
         'brand-color': '#4C3398',
         'primary-brand-color': '#5D3EBC',
+        'secondary-brand-color': '#7849f7'
+      }),
+      gradientColorStops: theme => ({
+        ...theme('colors'),
+        'brand-color': '#4C3398',
+        'primary-brand-color': '#5D3EBC',
+        'secondary-brand-color': '#7849f7'
       }),
       textColor: {
         'header': '#D7D6FC',
