@@ -1,4 +1,4 @@
-# getir.com homepage with react and tailwindcss
+# getir.com homepage with reactjs and tailwindcss
 
 ### Getting Started with Create React App
 
