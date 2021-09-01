@@ -10,3 +10,15 @@
         @apply antialiased
     }
 }
+
+.flag-select {
+    @apply !pb-0
+}
+
+.flag-select button {
+    @apply h-14 border-2 border-gray-300 bg-white hover:border-primary-brand-color transition-colors
+}
+
+.flag-select button > span span:nth-child(2) {
+    @apply text-sm pl-2
+}
