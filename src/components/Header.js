@@ -3,8 +3,8 @@ import { HiUser, HiUserAdd } from 'react-icons/hi';
 
 function Header() {
     return (
-        <div className="bg-brand-color select-none">
-            <div className="container mx-auto  h-[45px] flex items-center justify-between">
+        <div className="select-none bg-brand-color">
+            <div className="container mx-auto  h-[45px] flex items-center justify-between px-36">
 
                 <nav className="flex items-center gap-x-[1px]">
                     {/* <a href="http://localhost:3000/">
@@ -32,16 +32,16 @@ function Header() {
                     </a>
                 </nav>     
 
-                <nav className="flex gap-x-9 text-sm font-semibold">
-                    <a href="http://localhost:3000/" className="flex items-center gap-x-2 text-header hover:text-white transition-colors">
+                <nav className="flex text-sm font-semibold gap-x-9">
+                    <a href="http://localhost:3000/" className="flex items-center transition-colors gap-x-2 text-header hover:text-white">
                         <FiGlobe size={20}/>
                         Türkçe (TR)
                     </a>
-                    <a href="http://localhost:3000/" className="flex items-center gap-x-2 text-header hover:text-white transition-colors">
+                    <a href="http://localhost:3000/" className="flex items-center transition-colors gap-x-2 text-header hover:text-white">
                         <HiUser size={20}/>
                         Giriş Yap
                     </a>
-                    <a href="http://localhost:3000/" className="flex items-center gap-x-2 text-header hover:text-white transition-colors">
+                    <a href="http://localhost:3000/" className="flex items-center transition-colors gap-x-2 text-header hover:text-white">
                         <HiUserAdd size={20}/>
                         Kayıt Ol
                     </a>

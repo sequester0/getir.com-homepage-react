@@ -7,7 +7,7 @@
 @layer base {
     html, body {
         font-family: 'Open Sans', sans-serif;
-        @apply antialiased
+        @apply antialiased bg-register-color
     }
 }
 
@@ -21,4 +21,8 @@
 
 .flag-select button > span span:nth-child(2) {
     @apply text-sm pl-2
+}
+
+.slick-slide {
+    @apply max-h-[500px]
 }
