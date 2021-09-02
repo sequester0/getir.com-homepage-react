@@ -28,19 +28,19 @@ function HeroSection() {
     };
 
     return (
-        <div className="relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10 select-none">
+        <div className="relative select-none h-500 before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
             <Slider {...settings}>
                 <div>
-                  <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg" alt=""/>
+                  <img className="object-cover w-full h-500" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg" alt=""/>
                 </div>
                 <div>
-                  <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg" alt=""/>
+                  <img className="object-cover w-full h-500" src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg" alt=""/>
                 </div>
                 <div>
-                  <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-3-ffd1e98c5da51809f9adcc3a4a37d751.jpg" alt=""/>
+                  <img className="object-cover w-full h-500" src="https://getir.com/_next/static/images/getir-mainpage-3-ffd1e98c5da51809f9adcc3a4a37d751.jpg" alt=""/>
                 </div>
                 <div>
-                  <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg" alt=""/>
+                  <img className="object-cover w-full h-500" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg" alt=""/>
                 </div>
             </Slider>
             <div className="container absolute top-0 z-20 flex items-center justify-between h-full -translate-x-1/2 left-1/2 px-36">
