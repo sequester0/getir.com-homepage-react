@@ -3,7 +3,7 @@ import { HiUser, HiUserAdd } from 'react-icons/hi';
 
 function Header() {
     return (
-        <div className="select-none bg-brand-color">
+        <div className="sticky top-0 z-50 select-none bg-brand-color">
             <div className="container mx-auto  h-[45px] flex items-center justify-between px-36">
 
                 <nav className="flex items-center gap-x-[1px]">
