@@ -46,7 +46,7 @@ function HeroSection() {
             <div className="container absolute top-0 z-20 flex items-center justify-between h-full -translate-x-1/2 left-1/2 px-36">
                 <div>
                     <img height="180px" width="180px" src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="" />
-                    <h3 className="text-4xl font-semibold text-white mt-9">
+                    <h3 className="text-4xl font-semibold tracking-tighter text-white mt-9">
                         Dakikalar içinde <br /> kapınızda
                     </h3>
                 </div>
