@@ -4,6 +4,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        '500': '31.25rem',
+      }, 
+      spacing: {
+        '0.1': '0.063rem',
+      },
       colors: {
         'brand-color': '#4C3398',
         'primary-brand-color': '#5D3EBC',
@@ -12,7 +18,7 @@ module.exports = {
         'header': '#D7D6FC',
         'brand-yellow': '#FFD300',
         'facebook': '#3c5a99',
-        'facebook-button': '#E7EAF1'
+        'facebook-button': '#E7EAF1',
       }
     },
   },
