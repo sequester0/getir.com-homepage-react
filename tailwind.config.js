@@ -23,6 +23,7 @@ module.exports = {
         'facebook': '#3c5a99',
         'facebook-button': '#E7EAF1',
         'cards-txt': '#697488',
+        'color-black': '#191919',
       }
     },
   },
