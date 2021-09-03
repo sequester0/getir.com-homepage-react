@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'mobile-app': 'url(https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png)',
+      }),
       height: {
         '500': '31.25rem',
       }, 
@@ -19,6 +22,7 @@ module.exports = {
         'brand-yellow': '#FFD300',
         'facebook': '#3c5a99',
         'facebook-button': '#E7EAF1',
+        'cards-txt': '#697488',
       }
     },
   },
