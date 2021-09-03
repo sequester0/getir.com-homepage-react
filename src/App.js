@@ -10,16 +10,18 @@ import Footer from 'components/Footer';
 function App() {
   return (
     <>
-      <Header />
-      <HeroSection />
-      <Categories />
-      <Campaigns />
-      <div className="container grid mx-auto px-36 gap-y-6">
-        <Favourites />
-        <MobileApp />
-        <Cards />
+      <div className="h-[941px] overflow-y-scroll scrollbar scrollbar-thumb-primary-brand-color hover:scrollbar-thumb-secondary-brand-color transition-colors duration-1000 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-thin">
+        <Header />
+        <HeroSection />
+        <Categories />
+        <Campaigns />
+        <div className="container grid mx-auto px-36 gap-y-6">
+          <Favourites />
+          <MobileApp />
+          <Cards />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

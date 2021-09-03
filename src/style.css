@@ -620,6 +620,11 @@ video {
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+
 html, body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --tw-bg-opacity: 1;
@@ -763,6 +768,10 @@ html, body {
 
 .grid {
   display: grid;
+}
+
+.h-\[941px\] {
+  height: 941px;
 }
 
 .h-\[150px\] {
@@ -958,6 +967,10 @@ html, body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .whitespace-nowrap {
@@ -1259,6 +1272,86 @@ html, body {
   transition-duration: 150ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.scrollbar {
+  --scrollbar-track: initial;
+  --scrollbar-thumb: initial;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  overflow: overlay;
+}
+
+.scrollbar.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.scrollbar.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+}
+
+.scrollbar {
+  scrollbar-width: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+.scrollbar-thin {
+  --scrollbar-track: initial;
+  --scrollbar-thumb: initial;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  overflow: overlay;
+}
+
+.scrollbar-thin.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.scrollbar-thin.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thumb-rounded-full::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}
+
+.scrollbar-track-transparent {
+  --scrollbar-track: transparent !important;
+}
+
+.scrollbar-thumb-primary-brand-color {
+  --scrollbar-thumb: #5D3EBC !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .flag-select {
@@ -1336,6 +1429,44 @@ html, body {
   --tw-gradient-to: transparent;
 }
 
+.focus\:border-primary-brand-color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(93, 62, 188, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:text-primary-brand-color {
+  --tw-text-opacity: 1;
+  color: rgba(93, 62, 188, var(--tw-text-opacity));
+}
+
+.peer:valid ~ .peer-valid\:h-6 {
+  height: 1.5rem;
+}
+
+.peer:valid ~ .peer-valid\:text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.peer:valid ~ .peer-valid\:text-primary-brand-color {
+  --tw-text-opacity: 1;
+  color: rgba(93, 62, 188, var(--tw-text-opacity));
+}
+
+.peer:focus ~ .peer-focus\:h-6 {
+  height: 1.5rem;
+}
+
+.peer:focus ~ .peer-focus\:text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.peer:focus ~ .peer-focus\:text-primary-brand-color {
+  --tw-text-opacity: 1;
+  color: rgba(93, 62, 188, var(--tw-text-opacity));
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1405,40 +1536,14 @@ html, body {
   text-decoration: underline;
 }
 
-.focus\:border-primary-brand-color:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(93, 62, 188, var(--tw-border-opacity));
+.hover\:scrollbar-track-gray-100::-webkit-scrollbar-track:hover {
+  --scrollbar-track: #f3f4f6 !important;
 }
 
-.group:hover .group-hover\:text-primary-brand-color {
-  --tw-text-opacity: 1;
-  color: rgba(93, 62, 188, var(--tw-text-opacity));
+.hover\:scrollbar-thumb-gray-100::-webkit-scrollbar-thumb:hover {
+  --scrollbar-thumb: #f3f4f6 !important;
 }
 
-.peer:valid ~ .peer-valid\:h-6 {
-  height: 1.5rem;
-}
-
-.peer:valid ~ .peer-valid\:text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.peer:valid ~ .peer-valid\:text-primary-brand-color {
-  --tw-text-opacity: 1;
-  color: rgba(93, 62, 188, var(--tw-text-opacity));
-}
-
-.peer:focus ~ .peer-focus\:h-6 {
-  height: 1.5rem;
-}
-
-.peer:focus ~ .peer-focus\:text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.peer:focus ~ .peer-focus\:text-primary-brand-color {
-  --tw-text-opacity: 1;
-  color: rgba(93, 62, 188, var(--tw-text-opacity));
+.hover\:scrollbar-thumb-secondary-brand-color::-webkit-scrollbar-thumb:hover {
+  --scrollbar-thumb: #7849f7 !important;
 }
