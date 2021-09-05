@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {Collapse} from 'react-collapse';
+import { Collapse } from 'react-collapse';
 import { useWindowWidth } from '@react-hook/window-size';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -15,7 +15,7 @@ function Menu({ title, items }) {
         }
     }
 
-    useEffect(() => {
+    useEffect((isOpen) => {
         if (isOpen && windowWidth <= 768) {
             setIsOpen(false);
         }
