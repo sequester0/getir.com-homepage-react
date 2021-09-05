@@ -66,11 +66,11 @@ function Footer() {
 
     return (
         <div className="mt-16 bg-white shadow-inner">
-            <div className="container mx-auto px-36">
-                <div className="grid grid-cols-4 pt-10">
+            <div className="container px-4 mx-auto md:px-0">
+                <div className="grid pt-5 md:pt-10 md:grid-cols-2 lg:grid-cols-4 gap-y-6">
                     <section>
-                        <nav className="grid max-w-[160px] gap-y-4">
-                            <h6 className="text-lg text-primary-brand-color">Getir'i indirin!</h6>
+                        <h6 className="text-lg text-primary-brand-color">Getir'i indirin!</h6>
+                        <nav className="grid grid-cols-2 gap-2 md:gap-4 md:grid-cols-1">
                             <a href="http://localhost:3000" className="transition-all duration-150 transform hover:scale-105">
                                 <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" alt="" />
                             </a>
@@ -84,7 +84,7 @@ function Footer() {
                     </section>
                     {menuData.map((menu, index) => <Menu key={index} {...menu}/>)}
                 </div>
-                <div className="flex items-center justify-between py-6 mt-6 border-t border-gray-100">
+                <div className="flex flex-col items-center justify-between py-6 mt-6 border-t border-gray-100 md:flex-row">
                     <div className="flex text-xs text-gray-700 gap-x-2">
                         &copy; 2021 Getir
                         <span>•</span>

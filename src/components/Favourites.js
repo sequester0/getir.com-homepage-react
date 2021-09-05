@@ -12,8 +12,8 @@ function Favourites() {
 
     return (
         <div>
-            <h3 className="mb-2 text-sm font-semibold text-gray-800">Favoriler</h3>
-            <div className="grid grid-cols-8 gap-0.1 overflow-hidden rounded-lg">
+            <h3 className="px-4 mb-2 text-sm font-semibold text-gray-800 md:px-0">Favoriler</h3>
+            <div className="grid grid-cols-3 2xl:grid-cols-8 xl:grid-cols-7 lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 gap-0.1 overflow-hidden rounded-lg">
                 {
                     products.length && products.map((product, index) => <ProductItem key={product.id} product={product} />)
                 }

@@ -14,22 +14,42 @@ function Campaigns() {
         dots: false,
         infinite: true,
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 400,
-        autoplaySpeed: 3000,
-        cssEase: "linear"
+        speed: 500,
+        autoplaySpeed: 3500,
+        cssEase: "linear",
+        responsive: [
+            {
+              breakpoint: 1280,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                },
+            }
+        ]
     };
 
     return (
-        <div className="container py-8 mx-auto px-36">
-            <h3 className="mb-2 text-sm font-semibold text-gray-800">Kampanyalar</h3>
-            <Slider className="-mx-2" {...settings}>
+        <div className="container mx-auto md:pt-8">
+            <h3 className="hidden mb-2 text-sm font-semibold text-gray-800 md:block">Kampanyalar</h3>
+            <Slider className="md:-mx-2" {...settings}>
                 {
                     banners.length && banners.map((banner, index) => (
-                        <div key={banner.id} className="px-2">
-                            <img className="rounded-lg" src={banner.image} alt="" />
+                        <div key={banner.id} className="block md:px-2">
+                            <img className="md:rounded-lg" src={banner.image} alt="" />
                         </div>
                     ))
                 }

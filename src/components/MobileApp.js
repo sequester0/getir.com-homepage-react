@@ -1,10 +1,12 @@
 function MobileApp() {
     return (
-        <div className="flex items-center justify-between text-white rounded-lg bg-primary-brand-color bg-mobile-app">
-            <div className="flex flex-col p-12 gap-y-3">
+        <div className="flex flex-col items-center justify-between text-white md:rounded-lg md:flex-row bg-primary-brand-color bg-mobile-app">
+            <div className="flex flex-col p-10 text-center gap-y-3 md:text-left">
                 <h3 className="text-2xl font-bold tracking-tighter">Getir'i indirin!</h3>
-                <p className="text-base font-semibold">İstediğiniz ürünleri dakikalar içinde kapınıza <br /> getirelim.</p>
-                <nav className="flex mt-5 gap-x-2">
+                <p className="mt-3 text-xs font-semibold md:text-base">
+						İstediğiniz ürünleri dakikalar içinde kapınıza <br/> getirelim.
+				</p>
+                <nav className="flex flex-wrap justify-center gap-2 mt-5 md:flex-nowrap">
                     <a href="http://localhost:3000" className="transition-all transform hover:scale-105">
                         <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" alt="" />
                     </a>
@@ -16,7 +18,7 @@ function MobileApp() {
                     </a>
                 </nav>
             </div>
-            <picture className="pt-8">
+            <picture className="pt-8 md:self-end">
                 <img src="https://getir.com/_next/static/images/phoneLanding-88c033545710c4808054072689e187d7.png" alt="" />
             </picture>
         </div>

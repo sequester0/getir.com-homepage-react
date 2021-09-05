@@ -6,22 +6,23 @@ import Favourites from 'components/Favourites';
 import MobileApp from 'components/MobileApp';
 import Cards from 'components/Cards';
 import Footer from 'components/Footer';
+import { useWindowWidth } from '@react-hook/window-size';
 
 function App() {
+  const windowWidth = useWindowWidth();
   return (
     <>
-      <div className="h-[941px] overflow-y-scroll scrollbar scrollbar-thumb-primary-brand-color hover:scrollbar-thumb-secondary-brand-color transition-colors duration-1000 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-thin">
-        <Header />
-        <HeroSection />
-        <Categories />
-        <Campaigns />
-        <div className="container grid mx-auto px-36 gap-y-6">
-          <Favourites />
-          <MobileApp />
-          <Cards />
-        </div>
-        <Footer />
+      <Header />
+      { windowWidth <= 768 && <Campaigns /> }
+      <HeroSection />
+      <Categories />
+      { windowWidth > 768 && <Campaigns /> }
+      <div className="container grid pt-8 mx-auto gap-y-6">
+        <Favourites />
+        <MobileApp />
+        <Cards />
       </div>
+      <Footer />
     </>
   );
 }
