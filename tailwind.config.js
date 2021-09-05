@@ -24,15 +24,12 @@ module.exports = {
         'facebook-button': '#E7EAF1',
         'cards-txt': '#697488',
         'color-black': '#191919',
+        'color-52': '#525252',
       }
     },
   },
   variants: {
-    extend: {
-      scrollbar: ['rounded']
+    extend: {},
     },
-  },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
+  plugins: [],
 }
