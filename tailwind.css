@@ -23,6 +23,6 @@
     @apply text-sm pl-2
 }
 
-.slick-slide {
-    @apply max-h-[500px]
+.ReactCollapse--collapse {
+    @apply transition-all
 }
